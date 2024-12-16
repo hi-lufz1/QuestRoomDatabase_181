@@ -11,7 +11,7 @@ class LocalRepositoryMhs (
         mahasiswaDao.insertMahasiswa(mahasiswa)
 
     }
-    
+
     //Metode ini memanggil fungsi getAllMahasiswa dari MahasiswaDao untuk mendapatkan semua data mahasiswa dalam bentuk aliran data (Flow).
     override fun getALlMhs(): Flow<List<Mahasiswa>> {
        return mahasiswaDao.getAllMahasiswa()
